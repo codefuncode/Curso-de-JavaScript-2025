@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+    <title>
+      Document
+    </title>
+  </head>
+</html>
+<body>
+  <div class="">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+    <div class="w3-container">
+      <div class="">
+        <h2>
+          JavaScript puede cambiar el contenido HTML
+        </h2>
+        <p>
+          Uno de los muchos métodos HTML JavaScript es getElementById ().
+        </p>
+        <p>
+          Este ejemplo utiliza el método para 'encontrar' un elemento HTML (con id = 'demo') y cambia el contenido del elemento (innerHTML) a 'Hola JavaScript':
+        </p>
+        <div class="w3-panel w3-card w3-light-grey">
+          <div class="w3-code jsHigh notranslate">
+            document.getElementById("demo").innerHTML = "Hello JavaScript";
+            <br/>
+            document.getElementById('demo').innerHTML = 'Hello JavaScript';
+            <br/>
+          </div>
+        </div>
+        <h3>
+          ¿Por qué estudiar JavaScript?
+        </h3>
+        <p>
+          JavaScript es uno de los 3 idiomas que todos los desarrolladores web deben aprender:
+        </p>
+        <ol>
+          <li>
+            HTML para definir el contenido de las páginas web
+          </li>
+          <li>
+            CSS para especificar el diseño de las páginas web
+          </li>
+          <li>
+            JavaScript para programar el comportamiento de las páginas web
+          </li>
+        </ol>
+        <p>
+          Las páginas web no son el único lugar donde se usa JavaScript. Muchos programas de escritorio y servidor usan JavaScript. Node.js es el más conocido. Algunas bases de datos, como MongoDB y CouchDB, también usan JavaScript como lenguaje de programación.
+        </p>
+        <p>
+          ¿Sabías?
+        </p>
+      </div>
+      <div class="w3-container w3-center w3-padding">
+        <img class="W3-image" id="imagen" src="https://i.ibb.co/B5q83SCj/pic-bulboff.gif"/>
+        <br/>
+        <img alt="" class="w3-circle" id="boton" src="https://i.ibb.co/8nwvH8Yh/button.png" style="width: 75px; height: 75px; margin-top: 20px;"/>
+      </div>
+    </div>
+    <!-- <script src="js/js.js" type="text/javascript"></script> -->
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+    <script> //w3CodeColor();</script>
+    <script type="text/javascript">
+    // 
+    // =================================================
+    // Seleccione de elementos 
+    // -------------------------------------------------
+    // Seleccionamos los elementos HTML por su id
+    let imagen = document.getElementById('imagen');
+    let boton = document.getElementById('boton');
+    
+    // Clocamos algo de CSS al botón 
+    boton.style.backgroundColor = "green";
+    boton.style.borderRadius = "75px";
+    
+    // Creamos el evento para que cuando 
+    // el usuario haga click con el ratón 
+    // se dispare la función 
+    boton.onclick = function() {
+    
+      cambiaImagen(this); // Llamada ala función 
+    };
+    
+    // Creamos la función que debemos llamar en el evento 
+    function cambiaImagen(btn_parametro) {
+      // Declaramos una variable y le pasamos el valor del parámetro
+      let btn = btn_parametro;
+    
+      // Disparamos el argumento en consola para saber si todo va bien 
+      console.log(btn);
+      // Aplicamos condiciones 
+    
+      // En este condicional buscamos si el color de fondo del botón es rojo 
+      // entones se realizaran las instrucciones dentro de las llaves 
+      if (btn.style.backgroundColor == "red") {
+    
+        // Instrucciones si el color de fondo del botón es rojo 
+        btn.style.backgroundColor = "green";
+    
+        // Cambiamos la imagen para que parezca que bombilla esta apagada 
+        imagen.src = "https://i.ibb.co/B5q83SCj/pic-bulboff.gif";
+    
+      }
+      // Si la primera condición no se cumple entones 
+      // verificamos si el color de fondo del botón en verde 
+      // entonces se realizara lo que hay dentro de las llaves 
+      else if (btn.style.backgroundColor == "green") {
+    
+        // Aplicamos color de fondo rojo al botón 
+        btn.style.backgroundColor = "red";
+    
+        // Cambiamos la imagen para quier parezca prendida la bombilla 
+        imagen.src = "https://i.ibb.co/C5TVDV9n/pic-bulbon.gif";
+      }
+    }
+           </script>
+  </div>
+</body>

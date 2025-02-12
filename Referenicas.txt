@@ -1,0 +1,6 @@
+https://developer.mozilla.org/en-US/docs/Learn_web_development
+
+https://www.php.net/
+
+https://mariadb.com/
+
