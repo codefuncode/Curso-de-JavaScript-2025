@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+    <title>
+      Documento
+    </title>
+    <!--  La función que llamaremos en linea debe esta previamente declarada  -->
+    <script src="js/funcion.js" type="text/javascript"></script>
+    <!-- <script type="text/javascript"> function ejempplo3(argument) { let parr = document.getElementById('parr3'); parr.innerHTML = "Párrafo modificado 3"; console.log('ejempplo3'); } // Ejemplo 3 console.log('Script en la cabecera'); // ejempplo3(); // ejempplo1(); // llamada a ala función // ejempplo2(); window.onload = function() { ejempplo1(); }; </script> -->
+  </head>
+  <body>
+    <div class="w3-container">
+      <p>
+        Formas de aplicar eventos a lo elementos HTML con JavaScript
+      </p>
+      <div class="uno">
+        <p id="parr1">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <input id="btn1" name="" type="button" value="precione 1"/>
+      </div>
+      <div class="dos">
+        <p id="parr2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+        <input id="btn2" name="" type="button" value="precione 2"/>
+      </div>
+      <div class="tres">
+        <p id="parr3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+        <!--  Aplicamos una función en linea al evento como atributo de la etiqueta -->
+        <input id="btn3" name="" onclick="ejempplo3()" type="button" value="precione 3"/>
+      </div>
+      <!--  Oras formas de aplicar eventos  -->
+      <script src="js/js.js" type="text/javascript"> </script>
+      <!-- <script type="text/javascript"> function ejempplo1(argument) { let btn = document.getElementById('btn1'); btn.onclick = function() { let parr = document.getElementById('parr1'); parr.innerHTML = "Párrafo modificado 1"; console.log('ejempplo1'); }; } // Ejemplo 1 function ejempplo2(argument) { let btn = document.getElementById('btn2'); btn.addEventListener("click", miFuncion); } // Ejemplo 2 function miFuncion(argument) { let parr = document.getElementById('parr2'); parr.innerHTML = "Párrafo modificado 2"; console.log('ejempplo2'); } // ejempplo3(); // ejempplo1(); // llamada a ala función // ejempplo2(); </script> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <p>
+      ¿Dónde y Cómo Colocar JavaScript en HTML para un Rendimiento Óptimo?
+    </p>
+    <p>
+      Cuando desarrollamos una página web, la ubicación del código JavaScript en nuestro HTML es clave para maximizar el rendimiento y la experiencia del usuario. La ubicación y forma de insertar JavaScript impacta directamente en la velocidad de carga y en cómo el usuario interactúa con la página mientras los scripts están en ejecución. A continuación, exploramos diferentes enfoques y las mejores prácticas para colocar JavaScript en HTML.
+    </p>
+    <p>
+      Opciones para Colocar JavaScript en HTML
+    </p>
+    <p>
+      1. En la Cabecera (`<!--
+      <head>
+      -->
+      `)
+    </p>
+    <p>
+      - Colocar el código JavaScript dentro de la etiqueta `<!--
+      <head>
+      -->
+      ` es una opción común, pero tiene algunas consideraciones de rendimiento. Los scripts en el `<!--
+      <head>
+      -->
+      ` se cargan antes de que el contenido de la página se visualice, lo que puede provocar que los elementos HTML no se muestren hasta que el JavaScript termine de cargarse.
+    </p>
+    <p>
+      - Uso recomendado: Ideal para scripts que necesitan ejecutarse antes de que la página sea interactiva, como configuraciones iniciales o scripts que gestionan elementos críticos de la página, como ciertos servicios de análisis.
+    </p>
+    <!--
+      ```html
+    -->
+    <!--
+      <head>
+        <script src="script.js">
+        </script>
+      </head>
+    -->
+    <!--
+      ```
+    -->
+    <p>
+      2. Al Final del Cuerpo (`<!--
+      <body>
+      -->
+      `)
+    </p>
+    <p>
+      - Colocar el JavaScript justo antes del cierre de la etiqueta `<!--
+      <body>
+      -->
+      ` permite que el contenido HTML cargue completamente antes de que el navegador procese el JavaScript. Esto mejora significativamente la velocidad de carga percibida por el usuario.
+    </p>
+    <p>
+      - Uso recomendado: Este enfoque es ideal para la mayoría de los scripts, ya que garantiza que el usuario vea el contenido rápidamente y el JavaScript se ejecute después de que el DOM esté cargado.
+    </p>
+    <!--
+      ```html
+    -->
+    <!--
+      <body>
+        Contenido de la página
+        <script src="script.js">
+        </script>
+      </body>
+    -->
+    <!--
+      ```
+    -->
+    <p>
+      3. Usando el Atributo `defer`
+    </p>
+    <p>
+      - El atributo `defer` permite que el script se cargue en segundo plano y se ejecute solo después de que el documento HTML esté completamente analizado, pero antes del evento `DOMContentLoaded`. Esto garantiza que el JavaScript no bloquea la visualización inicial del contenido.
+    </p>
+    <p>
+      - Uso recomendado: Ideal para scripts que dependen de que el HTML esté completamente cargado, pero que deben ejecutarse lo antes posible.
+    </p>
+    <!--
+      ```html
+    -->
+    <!--
+      <head>
+        <script src="script.js" defer>
+        </script>
+      </head>
+    -->
+    <!--
+      ```
+    -->
+    <p>
+      4. Usando el Atributo `async`
+    </p>
+    <p>
+      - El atributo `async` permite que el script se cargue de manera asíncrona y se ejecute tan pronto como esté listo, sin esperar a que se cargue completamente el HTML. Esto es útil para scripts que no dependen de otros elementos HTML o que se ejecutan independientemente.
+    </p>
+    <p>
+      - Uso recomendado: Es ideal para scripts externos que no dependen del DOM, como anuncios o servicios de análisis de terceros.
+    </p>
+    <!--
+      ```html
+    -->
+    <!--
+      <head>
+        <script src="script.js" async>
+        </script>
+      </head>
+    -->
+    <!--
+      ```
+    -->
+    <p>
+      ¿Cuál es la Mejor Práctica?
+    </p>
+    <p>
+      Para la mayoría de los casos, colocar el JavaScript al final del cuerpo (`<!--
+      <body>
+      -->
+      `) o usar el atributo `defer` son las mejores prácticas. Esto permite que el contenido de la página se muestre rápidamente y que el usuario pueda interactuar con el contenido sin bloqueos.
+    </p>
+    <p>
+      Ejemplo Comparativo
+    </p>
+    <p>
+      Para ilustrar los efectos de cada enfoque, aquí tienes un ejemplo práctico:
+    </p>
+    <!--
+      ```html
+    -->
+    <!--
+      <!DOCTYPE html>
+      <html lang="es">
+        <head>
+          <meta charset="UTF-8"/>
+          <title>
+            Ubicación de JavaScript en HTML
+          </title>
+          Script en el head (puede ralentizar la carga inicial del contenido)
+        -->
+        <!--
+          <script src="script.js">
+          </script>
+        -->
+        <!--
+          Script con defer (no bloquea la carga de HTML)
+        -->
+        <!--
+          <script src="script.js" defer>
+          </script>
+        </head>
+        <body>
+          <h1>
+            ¡Hola, mundo!
+          </h1>
+          <p>
+            Este es un ejemplo de cómo y dónde colocar JavaScript en HTML.
+          </p>
+        -->
+        <!--
+          Script al final del body (mejora la velocidad de carga inicial)
+        -->
+        <!--
+          <script src="script.js">
+          </script>
+        -->
+        <!--
+        </body>
+      -->
+      <!--
+      </html>
+    -->
+    <!--
+      ```
+    -->
+    <p>
+      Conclusión
+    </p>
+    <p>
+      El rendimiento de tu sitio web mejora notablemente al optimizar la ubicación de los scripts. Colocar JavaScript al final del cuerpo o usar `defer` permite una carga más rápida, mejor experiencia de usuario y menor tiempo de renderizado de contenido visual. La elección dependerá del propósito de cada script y de las necesidades de la página, pero siguiendo estas pautas podrás ofrecer una experiencia más fluida y efectiva.
+    </p>
+    <script type="text/javascript">
+      function ejempplo3(argument) { let parr = document.getElementById('parr3'); parr.innerHTML = "Párrafo modificado 3"; console.log('ejempplo3'); } console.log('Script en la cabecera');
+    </script>
+    <div class="">
+      <p>
+        Ejemplos
+      </p>
+      <div class="w3-container">
+        <p>
+          Formas de aplicar eventos a lo elementos HTML con JavaScript
+        </p>
+        <div class="uno">
+          <p id="parr1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <input id="btn1" name="" type="button" value="precione 1"/>
+        </div>
+        <div class="dos">
+          <p id="parr2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <input id="btn2" name="" type="button" value="precione 2"/>
+        </div>
+        <div class="tres">
+          <p id="parr3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <input id="btn3" name="" onclick="ejempplo3()" type="button" value="precione 3"/>
+        </div>
+        <script type="text/javascript">
+          function ejempplo1(argument) { let btn = document.getElementById('btn1'); btn.onclick = function() { let parr = document.getElementById('parr1'); parr.innerHTML = "Párrafo modificado 1"; console.log('ejempplo1'); }; } function ejempplo2(argument) { let btn = document.getElementById('btn2'); btn.addEventListener("click", miFuncion); } function miFuncion(argument) { let parr = document.getElementById('parr2'); parr.innerHTML = "Párrafo modificado 2"; console.log('ejempplo2'); } ejempplo1(); ejempplo2();
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
