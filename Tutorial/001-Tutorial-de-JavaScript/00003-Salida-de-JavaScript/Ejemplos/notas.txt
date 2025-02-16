@@ -1,0 +1,180 @@
+
+Web APIs / Window
+
+    Window
+    Window Controls Overlay API
+    Window Management API
+    Window Management API: Multi-screen origin
+    Window Management API: Using
+    Window.afterprint event
+    Window.alert
+    Window.appinstalled event
+    Window.atob
+    Window.back
+    Window.beforeinstallprompt event
+    Window.beforeprint event
+    Window.beforeunload event
+    Window.blur
+    Window.blur event
+    Window.btoa
+    Window.caches
+    Window.cancelAnimationFrame
+    Window.cancelIdleCallback
+    Window.captureEvents
+    Window.clearImmediate
+    Window.close
+    Window.closed
+    Window.confirm
+    Window.console
+    Window.cookieStore
+    Window.copy event
+    Window.credentialless
+    Window.crossOriginIsolated
+    Window.crypto
+    Window.customElements
+    Window.cut event
+    Window.devicemotion event
+    Window.deviceorientation event
+    Window.deviceorientationabsolute event
+    Window.devicePixelRatio
+    Window.document
+    Window.documentPictureInPicture
+    Window.dump
+    Window.error event
+    Window.event
+    Window.external
+    Window.fence
+    Window.fetch
+    Window.find
+    Window.focus
+    Window.focus event
+    Window.forward
+    Window.frameElement
+    Window.frames
+    Window.fullScreen
+    Window.gamepadconnected event
+    Window.gamepaddisconnected event
+    Window.getComputedStyle
+    Window.getDefaultComputedStyle
+    Window.getScreenDetails
+    Window.getSelection
+    Window.hashchange event
+    Window.history
+    Window.indexedDB
+    Window.innerHeight
+    Window.innerWidth
+    Window.isSecureContext
+    Window.languagechange event
+    Window.launchQueue
+    Window.length
+    Window.load event
+    Window.localStorage
+    Window.location
+    Window.locationbar
+    Window.matchMedia
+    Window.menubar
+    Window.message event
+    Window.messageerror event
+    Window.moveBy
+    Window.moveTo
+    Window.mozInnerScreenX
+    Window.mozInnerScreenY
+    Window.name
+    Window.navigation
+    Window.navigator
+    Window.offline event
+    Window.online event
+    Window.open // esta es la que se esta usando ahora 
+    Window.opener
+    Window.orientation
+    Window.orientationchange event
+    Window.origin
+    Window.originAgentCluster
+    Window.outerHeight
+    Window.outerWidth
+    Window.pagehide event
+    Window.pagereveal event
+    Window.pageshow event
+    Window.pageswap event
+    Window.parent
+    Window.paste event
+    Window.performance
+    Window.personalbar
+    Window.popstate event
+    Window.postMessage
+    Window.print
+    Window.prompt
+    Window.queryLocalFonts
+    Window.rejectionhandled event
+    Window.releaseEvents
+    Window.requestAnimationFrame
+    Window.requestFileSystem
+    Window.requestIdleCallback
+    Window.resize event
+    Window.resizeBy
+    Window.resizeTo
+    Window.scheduler
+    Window.screen
+    Window.screenLeft
+    Window.screenTop
+    Window.screenX
+    Window.screenY
+    Window.scroll
+    Window.scrollbars
+    Window.scrollBy
+    Window.scrollByLines
+    Window.scrollByPages
+    Window.scrollMaxX
+    Window.scrollMaxY
+    Window.scrollTo
+    Window.scrollX
+    Window.scrollY
+    Window.self
+    Window.sessionStorage
+    Window.setImmediate
+    Window.setResizable
+    Window.sharedStorage
+    Window.showDirectoryPicker
+    Window.showModalDialog
+    Window.showOpenFilePicker
+    Window.showSaveFilePicker
+    Window.sizeToContent
+    Window.speechSynthesis
+    Window.status
+    Window.statusbar
+    Window.stop
+    Window.storage event
+    Window.toolbar
+    Window.top
+    Window.trustedTypes
+    Window.unhandledrejection event
+    Window.unload event
+    Window.updateCommands
+    Window.visualViewport
+    Window.vrdisplayactivate event
+    Window.vrdisplayconnect event
+    Window.vrdisplaydeactivate event
+    Window.vrdisplaydisconnect event
+    Window.vrdisplaypresentchange event
+    Window.webkitConvertPointFromNodeToPage
+    Window.webkitConvertPointFromPageToNode
+    Window.window
+    WindowClient
+    WindowClient.ancestorOrigins
+    WindowClient.focus
+    WindowClient.focused
+    WindowClient.navigate
+    WindowClient.visibilityState
+    WindowControlsOverlay
+    WindowControlsOverlay.geometrychange event
+    WindowControlsOverlay.getTitlebarAreaRect
+    WindowControlsOverlay.visible
+    WindowControlsOverlayGeometryChangeEvent
+    WindowControlsOverlayGeometryChangeEvent.constructor
+    WindowControlsOverlayGeometryChangeEvent.titlebarAreaRect
+    WindowControlsOverlayGeometryChangeEvent.visible
+    WindowSharedStorage
+    WindowSharedStorage.run
+    WindowSharedStorage.selectURL
+    WindowSharedStorage.worklet
+
