@@ -19,4 +19,3 @@ JavaScript es uno de los 3 idiomas que todos los desarrolladores web deben apren
 
 Las páginas web no son el único lugar donde se usa JavaScript. Muchos programas de escritorio y servidor usan JavaScript. Node.js es el más conocido. Algunas bases de datos, como MongoDB y CouchDB, también usan JavaScript como lenguaje de programación.
 ¿Sabías?
-00001-Introduccion-a-JavaScript
