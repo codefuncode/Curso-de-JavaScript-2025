@@ -8,11 +8,11 @@
       Document
     </title>
     <script type="text/javascript">
-      function myScript2(argument) {
-        let parr = document.getElementById('parr2');
-        parr.innerHTML = "Parrafo modificado 2";
-        }
-    </script>
+          function myScript2(argument) {
+            let parr = document.getElementById('parr2');
+            parr.innerHTML = "Parrafo modificado 2";
+            }
+        </script>
   </head>
   <body>
     <div class="w3-container">
@@ -107,13 +107,13 @@
           <br/>
         </div>
       </div>
-      <script src="js/js.js" type="text/javascript">
-      </script>
+      <script src="./js/js.js" type="text/javascript">
+            </script>
       <script src="https://www.w3schools.com/lib/w3codecolor.js">
-      </script>
+            </script>
       <script>
-        w3CodeColor();
-      </script>
+              w3CodeColor();
+            </script>
     </div>
   </body>
 </html>
