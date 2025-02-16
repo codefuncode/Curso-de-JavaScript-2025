@@ -4,3 +4,8 @@ https://www.php.net/
 
 https://mariadb.com/
 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+
+https://github.com/codefuncode/Curso-de-JavaScript-2025
